@@ -35,11 +35,11 @@ app.post("/register", async (req, res) => {
 
   // const encryptedPassword = await bcrypt.hash(password, 10);
   try {
-    // const oldUser = await User.findOne({ email });
+    const oldUser = await User.findOne({ email });
 
-    // if (oldUser) {
-    //   return res.json({ error: "User Exists" });
-    // }
+    if (oldUser) {
+      return res.json({ error: "User Exists" });
+    }
     await User.create({
       uname,
       email,
@@ -58,11 +58,11 @@ app.post("/login", async (req, res) => {
   if (!user) {
     return res.json({ error: "User Not found" });
   }
-  if (await compare(password, user.password)) {
+  if (await password == user.password) {
     // const token = jwt.sign({ email: user.email }, JWT_SECRET);
 
     if (res.status(201)) {
-      return res.json({ status: "ok", data: token });
+      return res.json({ status: "ok"});
     } else {
       return res.json({ error: "error" });
     }

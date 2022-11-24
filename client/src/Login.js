@@ -12,7 +12,7 @@ export default class Login extends Component {
       e.preventDefault();
       const { email, password } = this.state;
       console.log(email, password);
-      fetch("http://localhost:3000/login", {
+      fetch("http://localhost:3001/login", {
         method: "POST",
         crossDomain: true,
         headers: {
@@ -28,10 +28,13 @@ export default class Login extends Component {
         .then((res) => res.json())
         .then((data) => {
           console.log(data, "userRegister");
+          if (data.error == "Invalid Password") {
+            alert("Invalid Password");
+          }
           if (data.status == "ok") {
-            alert("login successful");
-            window.localStorage.setItem("token", data.data);
-            window.location.href = "./userDetails";
+            alert("Login successful");
+            // window.localStorage.setItem("token", data.data);
+            window.location.href = "./Home";
           }
         });
     }
@@ -41,9 +44,9 @@ export default class Login extends Component {
                 <h2>Login</h2>
                 <form className="login-form" onSubmit={this.handleSubmit}>
                     <label htmlFor = "email">Email</label>
-                    <input onChange={(e) => this.setEmail(e.target.value)} type = "email" placeholder="joe@gmail.com" id = "Lemail" name = "email"/>
+                    <input onChange={(e) => this.setState({email:e.target.value})} type = "email" placeholder="joe@gmail.com" id = "Lemail" name = "email" required/>
                     <label htmlFor = "password">Password</label>
-                    <input onChange={(e) => this.setPass(e.target.value)} type = "password" placeholder="**********" id = "Lpassword" name = "password"/>
+                    <input onChange={(e) => this.setState({password:e.target.value})} type = "password" placeholder="**********" id = "Lpassword" name = "password" required/>
                     <button type = "submit">Log In</button>
                 </form>
                 <a href="/Register">Don't have an account? Register</a>
