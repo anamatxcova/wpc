@@ -17,7 +17,7 @@ This repository contains MERN part of the project. You can find the ML part [her
 3. MongoDB
 
 
-## Setup/installl and run the project
+## Setup/install and run the project
 1. Make sure MongoDB is running on your system
 2. Fork the repository and clone it.
 3. Open two terminal windows (one for running Server and other for the UI).
