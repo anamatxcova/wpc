@@ -1,4 +1,4 @@
-#AI Fit
+# AI Fit
 
 ## CMPE195 Fall 2022 Senior Project
 
