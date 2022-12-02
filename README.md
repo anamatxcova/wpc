@@ -1,4 +1,4 @@
-# CMPE195 Senior Project
+# CMPE195 Fall 2022 Senior Project
 
 Submitted by Team 22:
 - Charles Im
@@ -6,7 +6,7 @@ Submitted by Team 22:
 - Dylan Zeglinski
 
 AI Fit is a machine learning project using computer vision to id and to score workout posture to help people with their workout goals.
-This repository contains MERN part of the project. You can find the ML part here(https://github.com/Charles-Philip/Fancy-Fox "ML").
+This repository contains MERN part of the project. You can find the ML part [here] (https://github.com/Charles-Philip/Fancy-Fox "ML").
 
 ## Setup/installl and run the project
 
