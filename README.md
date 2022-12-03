@@ -29,7 +29,7 @@ This repository contains MERN part of the project. You can find the ML part [her
 
 ## Demo
 
-<video src='https://drive.google.com/drive/u/2/folders/0ABjuvmCZ2o-pUk9PVA' title='Video Walkthrough' width='180' alt='Video Walkthrough' />
+<video src='https://drive.google.com/drive/u/2/folders/0ABjuvmCZ2o-pUk9PVA' title='Video Walkthrough' width='180' />
 
 ## Notes
 - ML5 Framework over Tensorflow model
