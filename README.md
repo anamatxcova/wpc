@@ -29,6 +29,7 @@ This repository contains MERN part of the project. You can find the ML part [her
 
 ## Demo
 You can find a video demo [here](https://drive.google.com/file/d/1h0WqROzAJGAOAKGvK5ZokO04MTSP6YuR/view?usp=share_link)
+
 Note: the some of the timings do not correctly increment due to react's batch jobs
 
 ## Notes
