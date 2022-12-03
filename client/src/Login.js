@@ -33,7 +33,6 @@ export default class Login extends Component {
           }
           if (data.status == "ok") {
             alert("Login successful");
-            // window.localStorage.setItem("token", data.data);
             window.location.href = "./Home";
           }
         });
@@ -50,7 +49,6 @@ export default class Login extends Component {
                     <button type = "submit">Log In</button>
                 </form>
                 <a href="/Register">Don't have an account? Register</a>
-                {/* <button className="link-btn" onClick = {() => this.onFormSwitch('register')}>Don't have an account? Register</button> */}
             </div>
         )
     }
