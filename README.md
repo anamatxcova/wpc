@@ -28,7 +28,7 @@ This repository contains MERN part of the project. You can find the ML part [her
 
 
 ## Demo
-<video src="https://drive.google.com/file/d/1h0WqROzAJGAOAKGvK5ZokO04MTSP6YuR/view?usp=share_link" width=180 \>
+You can find a video demo [here](https://drive.google.com/file/d/1h0WqROzAJGAOAKGvK5ZokO04MTSP6YuR/view?usp=share_link)
 
 
 ## Notes
